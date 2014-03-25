@@ -13,6 +13,7 @@ a, a:hover, a:focus, a:active{
 }
 .box-container{  background-color: white; }
 
+/* Commons */
 
 .well{
   background-color: white;
@@ -24,6 +25,20 @@ a, a:hover, a:focus, a:active{
   background-color: transparent;
   color: #555566;
 }
+
+.form-control{
+  background-color: #F8F8F8;
+  border-color: #EEEEEE;
+  box-shadow:none;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  background-color: white;
+  border-color: #D6D6D6;
+}
+
+/* /Commons */
 
 
 /* Header */
@@ -59,6 +74,24 @@ a, a:hover, a:focus, a:active{
 .inner-bootom-box{
   background: #F3F3F2
 }
+
+.add-to-cart{
+  color: white;
+  background: #555566;
+}
+
+.sidebar-title{
+  border-color: #EFEFEF;
+}
+
+
+
+#cart_checkout th,
+#cart_checkout td{
+  background-color:white;
+  border-color: #EBEBEB;
+}
+
 
 /* Modules */
 
