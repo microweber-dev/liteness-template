@@ -17,7 +17,27 @@ a, a:hover, a:focus, a:active{
 
 .well{
   background-color: white;
+  border-color:#EEEEEE;
   box-shadow: none;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #555566;
+    border-color: #555566;
+}
+
+.btn-default{
+  background-color: #F0F0F0;
+  border-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus{
+  background-color: #EBEBEB;
+  border-color: transparent;
+}
+.btn-warning{
+  background: #ED8D00;
 }
 
 .nav-pills > li > a, .nav-pills > li > a:hover, .nav-pills > li > a:focus,
@@ -37,6 +57,14 @@ a, a:hover, a:focus, a:active{
   background-color: white;
   border-color: #D6D6D6;
 }
+
+.date, .muted{
+  color: rgba(142, 142, 142, 1);
+}
+
+::selection{color:#fff;background:#777}
+::-moz-selection{color:#fff;background:#777}
+::-webkit-selection{color:#fff;background:#777}
 
 /* /Commons */
 
@@ -67,23 +95,47 @@ a, a:hover, a:focus, a:active{
 
 
 
-#footer{ border-top: 1px solid #DCDCDC;}
-#footer, #footer p{ color: #808080; }
+#footer, .mw-cart-action-holder{ border-top-color: #eee;}
 
-
-.inner-bootom-box{
+#powered,
+#copyright{
+    color: #ADADAD;
+}
+.inner-bottom-box{
   background: #F3F3F2
 }
 
-.add-to-cart{
+.btn-action, .product-price-holder .btn, .btn-action-default{
   color: white;
   background: #555566;
 }
-
-.sidebar-title{
-  border-color: #EFEFEF;
+.mw-defaults .btn-action,
+.mw-defaults .btn-action-default{
+  color: white;
 }
 
+.btn-action:hover,
+.btn-action-default:hover,
+.btn-action-default:focus,
+.product-price-holder .btn:hover,
+.product-price-holder .btn:focus,
+.btn-action:focus{
+  background: #41414E;
+}
+.btn-action:active, .btn-action-default:active{
+  box-shadow: inset 0 0 6px #000;
+}
+
+.sidebar-title, .border-title{
+  border-color: #EFEFEF;
+}
+.sidebar-box .nav li a{
+  color: #8F8F8F;
+}
+
+.sidebar-box .nav li a.active{
+  color: #555566;
+}
 
 
 #cart_checkout th,
@@ -94,6 +146,31 @@ a, a:hover, a:focus, a:active{
 
 
 /* Modules */
+
+.contact-form-template-dream .contact-form,
+.contact-form-template-dream .contact-form-title,
+.mwcommentsmodule .comment .comment-image,
+.mw-captcha-image-holder,
+.mw_modal{
+  border-color:#EFEFEF
+}
+
+ .mwcommentsmodule input[type="email"], .mwcommentsmodule textarea, .mwcommentsmodule input[type="text"],
+ .mwcommentsmodule .comments-template-stylish .comment .comment-content {
+   border-color: #efefef;
+   background-color: white;
+ }
+
+
+.module-navigation-default li:hover a.active,
+.module-navigation-default a.active,
+.module-navigation-default a.active:hover,
+.module-navigation-default a.active:active,
+.module-navigation-default a.active:focus{
+  background: #8E8E8E;
+  background: #555566;
+  color: white;
+}
 
 
 

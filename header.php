@@ -17,11 +17,12 @@
         mw.lib.require("bootstrap3");
     </script>
     <link rel="stylesheet" href="<?php print template_url(); ?>css/style.css" type="text/css" />
+    
+  
+    
+    
 </head>
 <body>
-
-<a href="javascript:;"></a>
-
 <div id="main-container">
     <div id="header">
        <div class="container">

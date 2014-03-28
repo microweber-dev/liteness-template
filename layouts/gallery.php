@@ -12,7 +12,7 @@
 */
 
 ?>
-<?php include THIS_TEMPLATE_DIR. "header.php"; ?>
+<?php include TEMPLATE_DIR. "header.php"; ?>
 
 
 
@@ -22,18 +22,16 @@
 
 <div class="container">
 
-    <h2 class="page-title">Hot Concept Art</h2>
+    <h2 class="edit page-title" field="title" rel="content">Hot Concept Art</h2>
 
-  <div class="masonry-gallery">
-    <module
-            content-id="<?php print PAGE_ID; ?>"
-            type="pictures"
-            template="pictures_grid"
-              />
+  <div class="box-container">
+    <div class="masonry-gallery">
+      <module content-id="<?php print PAGE_ID; ?>" type="pictures" template="pictures_grid" />
+    </div>
   </div>
 
 </div>
 
 </div>
 
-<?php include THIS_TEMPLATE_DIR. "footer.php"; ?>
+<?php include TEMPLATE_DIR. "footer.php"; ?>

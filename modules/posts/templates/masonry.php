@@ -70,7 +70,7 @@ description: Masonry
             <h3><a class="lead" href="<?php print $item['link'] ?>"><?php print $item['title'] ?></a></h3>
         <?php endif; ?>
         <?php if(!isset($show_fields) or $show_fields == false or in_array('created_on', $show_fields)): ?>
-            <small class="date"><span class="glyphicon glyphicon-calendar"></span> <?php $date = new DateTime($item['created_on']); print date_format($date, 'F d, Y');; ?></small>
+            <small class="date"><span class="glyphicon glyphicon-calendar"></span> <?php print $item['created_on']; ?></small>
         <?php endif; ?>
         </div>
         <?php if(!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>

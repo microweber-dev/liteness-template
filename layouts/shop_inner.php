@@ -1,10 +1,10 @@
-<?php include THIS_TEMPLATE_DIR. "header.php"; ?>
+<?php include TEMPLATE_DIR. "header.php"; ?>
 
 
 <section id="content">
 	<div class="container">
 		<div class="edit" field="content" rel="post">
-			<div class="mw-row">
+			<div class="mw-row shop-product-row">
 				<div class="mw-col" style="width:65%">
 					<div class="mw-col-container">
 						<module type="pictures" rel="content" template="product_gallery_multiline" />
@@ -22,16 +22,16 @@
 			</div>
 		</div>
 	</div>
-    <div class="inner-bootom-box">
+    <div class="inner-bottom-box">
       <div class="container box-container">
         <div class="edit"  field="related_products" rel="inherit">
           <div class="latest-items">
             <h2 class="section-title element">Related Products</h2>
-            <module type="shop/products" related="true" limit="3" ajax-paging="true" />
+            <module type="shop/products" related="true" limit="3" ajax-paging="true" data-show="thumbnail,title,add_to_cart,price" />
             <p class="element">&nbsp;</p>
           </div>
         </div>
       </div>
     </div>
 </section>
-<?php include THIS_TEMPLATE_DIR. "footer.php"; ?>
+<?php include TEMPLATE_DIR. "footer.php"; ?>

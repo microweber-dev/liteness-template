@@ -14,12 +14,16 @@ description: Small cart template
 
 <script>
     mw.moduleCSS("<?php print $config['url_to_module'] ?>templates/templates.css");
+
 </script>
 
-<div class="<?php if(is_array($data)==false){print "mw-cart-small-no-items";} ?>  mw-cart-<?php print $params['id']?> <?php print  $template_css_prefix  ?>">
-  <div class="mw-ui-row-nodrop">
-    <div class="mw-ui-col icon-shopping-cart-holder"><span class="mw-cart-small-icon-shopping-cart"></span></div>
-    <?php if(is_array($data)) :?>
+<div class="cart-small <?php if(is_array($data)==false){print "mw-cart-small-no-items";} ?>  mw-cart-<?php print $params['id']?> <?php print  $template_css_prefix  ?>">
+  <?php if(is_array($data)) :?>
+
+<a class="mw-ui-row-nodrop cart-small-checkout-link" href="<?php print checkout_url(); ?>">
+    <span class="mw-ui-col icon-shopping-cart-holder"><span class="mw-cart-small-icon-shopping-cart"></span></span>
+
+
     <?php
         $total_qty = 0;
         $total_price = 0;
@@ -28,7 +32,9 @@ description: Small cart template
             $total_price +=  $item['price']* $item['qty'];
         }
       ?>
-    <div class="mw-ui-col"><span class="mw-cart-small-order-info"><strong><?php print $total_qty; ?></strong> - <span class="mw-cart-small-order-info-total"><?php print currency_format($total_price); ?></span></span></div>
+
+
+    <span class="mw-ui-col"><span class="mw-cart-small-order-info"><strong><?php print $total_qty; ?></strong><span class="mw-cart-small-order-info-total">Total: &nbsp;<?php print currency_format($total_price); ?></span></span></span>
     <?php
   if(!isset($params['checkout-link-enabled'])){
 	  $checkout_link_enanbled =  get_option('data-checkout-link-enabled', $params['id']);
@@ -42,17 +48,22 @@ description: Small cart template
 
 	   $checkout_page_link = content_link($checkout_page).'/view:checkout';
    } else {
-	   $checkout_page_link = site_url('checkout');
+	   $checkout_page_link = checkout_url();
 
    }
 
    ?>
 
     <?php endif ; ?>
+
+    </a>
     <?php else : ?>
+    <div class="mw-ui-row-nodrop">
+    <span class="mw-ui-col icon-shopping-cart-holder"><span class="mw-cart-small-icon-shopping-cart"></span></span>
     <div class="mw-ui-col"><h5 class="no-items">
     <?php   _e('Your cart is empty') ?>
     </h5></div>
+     </div>
     <?php endif ; ?>
-  </div>
+
 </div>

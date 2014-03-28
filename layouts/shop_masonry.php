@@ -4,10 +4,10 @@
 
 type: layout
 content_type: dynamic
-name: Shop
+name: Shop Masonry
 is_shop: y
-description: Shop Layout
-position: 3
+description: Online Shop - Products appear in Masonry style
+position: 4
 */
 
 
@@ -21,7 +21,7 @@ position: 3
 			<div class="col-md-9">
     			<div class="edit" field="shop-content" rel="page">
     				<div class="box-container">
-                        <module type="shop/products" template="2columns" limit="18" description-length="70" data-show="thumbnail,title,add_to_cart,price" />
+                        <module type="shop/products" template="masonry" limit="18" description-length="70" data-show="thumbnail,title,add_to_cart,price" />
                     </div>
     			</div>
 			</div>
