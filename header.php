@@ -17,18 +17,14 @@
         mw.lib.require("bootstrap3");
     </script>
     <link rel="stylesheet" href="<?php print template_url(); ?>css/style.css" type="text/css" />
-    
-  
-    
-    
-</head>
+ </head>
 <body>
 <div id="main-container">
     <div id="header">
        <div class="container">
         <div class="row">
             <div class="col-md-9">
-              <h1 class="edit nodrop element" id="logo">
+              <h1 class="edit nodrop element" id="logo" field="logo-top" rel="global">
                   <a href="<?php print site_url(); ?>">
                     <span>Liteness</span>
                     <small>Define your own Space</small>
@@ -36,7 +32,7 @@
                </h1>
             </div>
             <div class="col-md-3">
-              <div class="header-cart"><module type="shop/cart" template="small"></div>
+              <div class="edit header-cart" field="header-cart" rel="global"><module type="shop/cart" template="small"></div>
             </div>
        </div>
        </div>

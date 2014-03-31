@@ -129,12 +129,11 @@ body.has-color .box-container{
 
   .alert > ul,
   .alert > ol{
-    padding-left: 14px;
     font-size: 12px;
   }
   .alert > ul.mw-error-list li{
-    padding-left: 33px;
-    background: #D6253F;
+    padding-left: 12px;
+    background: #E66B7D;
     color: white;
     margin-bottom: 12px;
   }
@@ -274,6 +273,13 @@ body.has-color .box-container{
   float:right;
   width: 190px;
   margin: 50px auto 0;
+}
+
+#header .header-cart > p.element:only-child{
+  display: none;
+}
+.dragStart #header .header-cart:hover{
+  background-color: #FFFFB9;
 }
 
 #header .header-cart *{
