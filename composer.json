@@ -1,6 +1,12 @@
 {
     "name": "microweber/liteness-template",
     "type": "microweber-template",
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.microweber.com/"
+        }
+    ],
     "require": {
         "microweber/installers": "*",
 		"components/bootstrap3": "*"
