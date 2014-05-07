@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "microweber/installers": "*",
-		"components/bootstrap3": "*"
+        "microweber/installers": "dev-master",
+		"components/bootstrap3": "dev-master"
     }
 }
