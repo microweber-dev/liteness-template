@@ -9,6 +9,6 @@
     ],
     "require": {
         "microweber/installers": "1.0.*@dev",
-		"components/bootstrap3": "dev-master"
+		"components/bootstrap3": "*"
     }
 }
